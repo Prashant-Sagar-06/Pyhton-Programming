@@ -1,19 +1,11 @@
-amount = int(input("Enter the total amount: "))
+b=int(input("enter amount"))
+a=b-100
+count2000=a//2000
+new_a=a-count2000*2000
+count500=new_a//500
+neww_a=new_a-count500*500
+count100=neww_a//100
+print(count2000)
+print(count500)
+print(count100)
 
-# Subtracting 100 from the amount as we're considering 100 as the base amount
-remaining_amount = amount - 100
-
-# Counting the number of 2000 rupee notes
-count_2000 = remaining_amount // 2000
-remaining_amount -= count_2000 * 2000
-
-# Counting the number of 500 rupee notes
-count_500 = remaining_amount // 500
-remaining_amount -= count_500 * 500
-
-# Counting the number of 100 rupee notes
-count_100 = remaining_amount // 100
-
-print("Number of 2000 rupee notes:", count_2000)
-print("Number of 500 rupee notes:", count_500)
-print("Number of 100 rupee notes:", count_100)
