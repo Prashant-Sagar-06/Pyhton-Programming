@@ -21,7 +21,7 @@ def outline():
                                 thresholdType=cv2.THRESH_BINARY, blockSize=9, C=2)
     return th3
 
-image = r'C:\Users\sagar\OneDrive\Desktop\PYTHON\PYTHON_MAKER\Jai-Shree-Ram-thumb.png'
+image = r"C:\Users\sagar\OneDrive\Desktop\Pyhton-Programming\PYTHON_Interfun\Jai-Shree-Ram-thumb.png"
 im = cv2.imread(image, 0)
 th3 = outline()
 
@@ -39,9 +39,6 @@ iH, iW = np.where(th3 == [0])
 iW = iW - WIDTH / 2
 iH = -1 * (iH - HEIGHT / 2)
 positions = [list(iwh) for iwh in zip(iW, iH)]
-
-# win = turtle.Screen()
-# win.bgcolor('black')
 
 t = turtle.Turtle()
 t.color("black")
