@@ -6,22 +6,22 @@ class Animal:
 class Lion(Animal):
     def display_details(self):
         print(f"""Lion : The king of jungle
-              Name:- {self.name}
-              Age:-{self.age}
-              Species:-{self.species}""")
+            Name:- {self.name}
+            Age:-{self.age}
+            Species:-{self.species}""")
 class Giraffe(Animal):
     def display_details(self):
         print(f"""Giraffe : The Longest animal  of jungle
-              Name:- {self.name}
-              Age:-{self.age}
-              Species:-{self.species}""")
+            Name:- {self.name}
+            Age:-{self.age}
+            Species:-{self.species}""")
 
 class Elephant(Animal):
     def display_details(self):
         print(f"""Elephant : The Heaviest animal of jungle
-              Name:- {self.name}
-              Age:-{self.age}
-              Species:-{self.species}""")         
+            Name:- {self.name}
+            Age:-{self.age}
+            Species:-{self.species}""")         
 
 # main code
 animal1=Lion("Sher",18,"Indian")
