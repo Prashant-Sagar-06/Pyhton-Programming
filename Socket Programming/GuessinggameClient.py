@@ -8,7 +8,8 @@ while True:
     s.send(guess.encode())
     data = s.recv(1024)
     print('Server:', data.decode())
-    if data == 'Correct!':
+    if data.decode() == 'Correct!':
+
         break
 s.close()
 

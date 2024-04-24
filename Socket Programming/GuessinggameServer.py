@@ -29,5 +29,6 @@ while True:
         client.send("Lower!".encode())
     else:
         client.send("Higher!".encode())
-s.close()
+
 client.close()
+s.close()
