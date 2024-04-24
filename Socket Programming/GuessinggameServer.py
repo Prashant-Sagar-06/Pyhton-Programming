@@ -16,6 +16,7 @@ print("Waiting for connection...")
 client, addr = s.accept()
 print('Connection from', addr)
 number = random.randint(1, 100)
+print('Number:', number)
 while True:
     data = client.recv(1024)
     if not data:
@@ -25,6 +26,8 @@ while True:
         client.send("Correct!".encode())
         break
     elif guess < number:
-        client.send("Higher!".encode())
-    else:
         client.send("Lower!".encode())
+    else:
+        client.send("Higher!".encode())
+s.close()
+client.close()
