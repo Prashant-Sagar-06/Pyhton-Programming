@@ -20,12 +20,11 @@ while True:
     data = client.recv(1024)
     if not data:
         break
-    guess = int(data)
+    guess =int(data.decode())
     if guess == number:
-        client.send(b'Correct!')
+        client.send("Correct!".encode())
         break
     elif guess < number:
-        client.send(b'Higher')
+        client.send("Higher!".encode())
     else:
-        client.send(b'Lower')
-    client.close()
+        client.send("Lower!".encode())
